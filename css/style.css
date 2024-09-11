@@ -1,0 +1,1481 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #000000;
+  background-color: #fefefe;
+  overflow-x: hidden;
+}
+
+.layout_padding {
+  padding: 90px 0;
+}
+
+.layout_padding2 {
+  padding: 75px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 75px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 75px;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+.layout_margin-top {
+  margin-top: 90px;
+}
+
+.layout_margin-bottom {
+  margin-bottom: 90px;
+}
+
+.heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.heading_container p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.heading_container.heading_center {
+  align-items: center;
+  text-align: center;
+}
+ a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+ }
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: green;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*header section*/
+.hero_area {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_area .hero_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero_area .hero_bg_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom right;
+}
+
+.sub_page .hero_area {
+  min-height: auto;
+  background-color: #178066;
+}
+
+.sub_page .hero_area .hero_bg_box {
+  display: none;
+}
+
+.header_section {
+  padding: 15px 0;
+}
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.navbar-brand span .logo-image{
+  height: 150px;
+  width: 150px;
+  object-fit:scale-down;
+  margin-top: -5vh;
+  margin-bottom: -5vh;
+} 
+
+.custom_nav-container {
+  padding: 0;
+}
+
+.custom_nav-container .navbar-nav {
+  margin-left: auto;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 5px 20px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nav-item .btn-group .dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+.nav-item .btn-group .dropdown-toggle .dropdown-menu .dropdown-item:hover{
+ color: #62d2a2;
+}
+ 
+.custom_nav-container .nav_search-btn {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+}
+custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 7px 0;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: -10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::after {
+  top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+
+/*end header section*/
+.logo-image{
+  height: 200px;
+  width: 200px;
+  margin-top: -5vh;
+}
+/* Profile setion  */
+.profile-section {
+  background-color: #12a390;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  z-index: 999;
+  height: auto;
+  width: 100%;
+}
+.profile-section img {
+  width: 15vw;
+  height: 20vh;
+  border-radius: 5px;
+}
+.profile-section p a {
+  color:  white;
+}
+.profile-image{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+object-fit: cover;
+}
+#profile{
+top: -1vh;
+border: none;
+border-radius: 50%;
+position: relative;
+
+}
+#profile:hover{
+border: 1px solid green;
+}
+  
+.input_form img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 1vh 5vw;
+}
+.form-group .textaria{
+  margin: 0 1vw;
+  padding: 1vh 2vw;
+  width: 56vw;
+  }
+/* End profile section */
+#profile-details {
+  display: none; /* Initially hidden */
+  width: 40%;
+  left: 30vw;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+
+}
+#profile-card{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+line-height: 30px;
+}
+#profile-card span a{
+color: rgb(17, 71, 17);
+}
+/* End profile section */
+/* slider section */
+.slider_section {
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 45px 0 145px 0;
+}
+
+.slider_section .row {
+   align-items: center;
+}
+
+.slider_section #customCarousel1 {
+  width: 100%;
+  position: unset;
+}
+
+.slider_section .detail-box {
+  color: #1fab89;
+}
+
+.slider_section .detail-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.slider_section .detail-box p {
+  color: #fefefe;
+  font-size: 14px;
+}
+
+ .btn-box {
+  display: flex;
+  margin: 0 -5px;
+  margin-top: 25px;
+}
+
+.btn-box a {
+  margin: 5px;
+  text-align: center;
+  width: 165px;
+}
+
+ .btn-box .btn1 {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #62d2a2;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #ffffff;
+}
+
+ .btn-box .btn1:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.slider_section .img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.slider_section .img-box img {
+  width: 100%;
+  max-width: 375px;
+}
+
+.slider_section .carousel-indicators {
+  position: unset;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_section .carousel-indicators li {
+  background-color: #ffffff;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.slider_section .carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+}
+/* Start services Section */
+
+.service_section {
+  position: relative;
+}
+
+.service_section .service_box i{
+  font-size: 3rem;
+  color: #047220;
+  margin-bottom: 1rem;
+}
+.service_section .service_box{
+  margin: 2vh 0;
+  text-align: center;
+  border: 1px solid green;
+  padding: 2vh;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  box-shadow: 0px 5px 0px 5px  #138052;
+}
+.service_section .service_box h3 {
+  font-size: 1.5em;
+}
+.service_section .service_box p {
+  font-size: 1em;
+}
+.service_section .box .detail-box a {
+  color: #1fab89;
+  font-weight: 600;
+}
+
+.service_section .box .detail-box a:hover {
+  color: #62d2a2;
+}
+
+.service_section .btn-box {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.service_section .btn-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #62d2a2;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #62d2a2;
+}
+
+.service_section .btn-box a:hover {
+  background-color: transparent;
+  color: #62d2a2;
+}
+/* end Services section */
+ /* Gallery_section */
+
+.Gallery_section {
+  position: relative;
+}
+.Gallery_section h2 {
+  color: #000000;
+}
+.Gallery_section .gallery_image {
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0.25px solid rgb(15, 75, 15);
+  box-shadow: 2px 5px 5px 2px rgb(255, 255, 255);
+ }
+ .Gallery_section .gallery_image img{
+   height: 200px;
+   width: 100%;
+  
+ }
+ .Gallery_section .gallery_image img:hover{
+   transform: scale(1.3);
+   transition: all 1.5s ease;
+   cursor: zoom-in;
+ } 
+  /* End .Gallery_section */
+  /* vaccine details section */
+  .service_section .vaccine_box {
+    height: auto;
+    margin: 2vh 0;
+    text-align: center;
+    border: 1px solid green;
+    padding: 2vh;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    box-shadow: 0px 5px 0px 5px  #138052;
+   } .service_section .vaccine_box .vaccine-status{
+    display: flex;
+    position: relative;
+    justify-content:space-around;
+   }
+   .service_section .vaccine_box h3{
+    margin: 2vh 0;
+   }
+   .service_section .vaccine_box p{
+     display: none;
+     border: 0.5px solid rgb(12, 31, 12);
+   }
+    .service_section .image{
+     margin: 2vh 0;
+     position: relative;
+     justify-content: center;
+    
+     
+  }
+  .service_section .image img{
+    height: 100px;
+    width: 100px ;
+    border-radius: 50%;
+    border: 1px solid rgb(13, 71, 13);
+    object-fit: cover;
+    transform: scale(1);
+  }
+  .service_section .image img:hover{
+    transition: all ease 1s;
+    transform: scale(1.3);
+  }
+  span i{
+    color: #138052;
+  }
+  /* End vaccine section */
+
+.about_section .row {
+  align-items: center;
+}
+
+.about_section .img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.about_section .img-box img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about_section .detail-box h3 {
+  font-weight: bold;
+}
+
+.about_section .detail-box p {
+  margin-top: 15px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #62d2a2;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #62d2a2;
+  margin-top: 15px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: transparent;
+  color: #62d2a2;
+}
+
+.Team_section {
+  background: #178066;
+}
+
+.Team_section .heading_container {
+  color: #ffffff;
+}
+
+.Team_section .box {
+  display: flex;  
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.Team_section .box .img-box {
+  width: 100%;
+}
+
+.Team_section .box .img-box img {
+  width: 100%;
+}
+
+.Team_section .box .detail-box {
+  width: 100%;
+  padding: 25px 15px;
+  text-align: center;
+  position: relative;
+}
+
+.Team_section .box .detail-box .social_box {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+  background-color: #0a5216;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.Team_section .box .detail-box .social_box a {
+  color: #eeeeee;
+  margin: 0 10px;
+}
+
+.Team_section .box .detail-box .social_box a:hover {
+  color: #ecf1f0;
+}
+
+.Team_section .box:hover .social_box {
+  top: 0;
+  opacity: 1;
+}
+
+.Team_section .btn-box {
+  display: flex;
+ justify-content: center;
+  margin-top: 45px;
+}
+
+.Team_section .btn-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #1fab89;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: 1px solid #1fab89;
+}
+
+.Team_section .btn-box a:hover {
+  background-color: transparent;
+  color: #1fab89;
+}
+
+.contact_section {
+  position: relative;
+  background-color: #1fab89;
+}
+
+.contact_section .heading_container {
+  margin-bottom: 25px;
+}
+
+.contact_section .heading_container h2 {
+  text-transform: uppercase;
+}
+
+.contact_section .form_container input {
+  width: 100%;
+  border: none;
+  height: 50px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  outline: none;
+  color: #101010;
+  background: #eeeeee;
+}
+
+.contact_section .form_container input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.contact_section .form_container input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.contact_section .form_container input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.contact_section .form_container input::placeholder {
+  color: #000000;
+}
+
+.contact_section .form_container input.message-box {
+  height: 175px;
+}
+
+.contact_section .form_container button {
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 55px;
+  background-color: #047e7e;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: 1px solid #e9ecec;
+}
+
+.contact_section .form_container button:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.contact_section .map_container {
+  height: 368px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+}
+
+.contact_section .map_container .map {
+  height: 100%;
+  flex: 1;
+}
+
+.contact_section .map_container .map #googleMap {
+  height: 100%;
+}
+
+.contact_section .page{
+height: auto;
+padding: 2vh 2vw;
+margin: 1vh 1vw;
+text-align: center;
+line-height: 50px;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;
+box-shadow: 0px 5px 0px 5px  #138052;
+border: 0.5px solid rgb(35, 99, 35);
+}
+.contact_section .page i {
+text-align: center;
+}
+.contact_section .page span a {
+font-size: 1em;
+color: rgb(0, 0, 0);
+font-weight: bold;
+}
+.faq-question {
+  cursor: pointer;
+  padding: 1.8vh;
+  margin: 2vh 0;
+  font-size: 1.5em;
+  color: white;
+  background-color: #08884c;
+  border: 1px solid #dee2e6;
+ 
+}
+.faq-answer {
+  display: none;
+  padding: 15px;
+  margin-top: -2vh;
+  margin-bottom: 2vh ;
+  border-top: none;
+  font-size: 1.1em;
+  border: 1px solid #dee2e6;
+  background-color: #d8c69e;
+}
+
+  /* Privacy Section */
+  .privacy-section .policy-image{
+    height: 50vh;
+    width: 100%;
+}
+.privacy-section{
+    padding: 20px;
+    background-color: #1fab89;
+    color: white;
+}
+.privacy-section .privacy-policy{
+ padding: 20px;
+}
+.privacy-section .privacy-policy h1 {
+ border: 1px dashed white;
+ font-size: 1.8em;
+ padding: 20px;
+ background-color: bisque;
+ color: rgb(15, 48, 17);
+ border-radius: 5px ;
+}
+
+.privacy-section .privacy-policy h2 {
+ border: 1px dashed white;
+ padding: 2px  2vw;
+ font-size: 1.6em;
+ background-color: bisque;
+ color: rgb(15, 48, 17);
+ border-radius: 5px ;
+}
+  /* End Privacy section */
+ /* book oppointment section */
+ .Appointment_section {
+  position: relative;
+  background-color: #eeeeee;
+}
+
+.Appointment_section .heading_container {
+  margin-bottom: 25px;
+}
+.Appointment_section .form_container{
+  height: auto;
+  width: 80%;
+  margin: 5vh 0 ;
+  padding: 1vh 2vw;
+  border-radius: 5px;
+  transform: translateX(8vw);
+  border: 1px solid rgb(212, 211, 211) ;
+  box-shadow: 2px 2px 2px 3px  rgb(32, 53, 32);
+ 
+}
+.contact_section .heading_container h2 {
+  text-transform: uppercase;
+ }
+.Appointment_section .form_container select{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  outline: none;
+  color: #101010;
+  background: #ece8e8;
+} 
+
+.Appointment_section .form_container input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  outline: none;
+  color: #101010;
+  background: #d1d1d1;
+}
+
+ .Appointment_section .form_container input::placeholder {
+  color: #000000;
+} 
+.Sign-up-btn{
+  display: inline-block;
+  padding: 1vh 1vw;
+  width: 40%;
+  margin: 2vh 18vw;
+  background-color: #21b44d;
+  color: #ffffff; 
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid #09c209;
+}
+.Sign-up-btn:hover{
+  background-color: transparent;
+  color: #097733;
+  transition: all 0.3s ease;
+  border: 1px solid #115811;
+}
+/* End book bookHospital */
+/* Account section page css */
+
+.Account-section{
+  height: auto;
+  width: 100%;
+  margin: 8vh 0;
+  padding: 3vh 2vh ;
+  border: 1px solid ;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 3px rgb(30, 80, 30);
+  border: 1px solid rgb(97, 94, 94);
+  
+}
+.Account-section:active ~ .Account-btn{
+  display: block;
+  cursor: pointer;
+}
+
+.Account-section .Account-btn {
+  display: inline-block;
+  padding: 0.8vh 1vw;
+  margin: 2vh 0;
+  width: 70%;
+  display: none;
+  background-color: #21b44d;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 1s ease;
+  border: 1px solid #09c209;
+  text-transform: uppercase;
+}
+.Account-section .Account-btn:hover {
+  width: 70%;
+  display: none;
+  color: #115722;
+  border-radius: 5px;
+  padding: 0.8vh 1vw;
+  display: inline-block;
+  transition: all 1s ease;
+  border: 1px solid #09c209;
+  background-color: #ffffff;
+ 
+}
+ /* end Account section page css */
+  /* search Hospital section  */
+  .Hospital_section{
+    top: 0px;
+    position: relative;
+    background: #ffffff;
+   
+  }
+    .Hospital_section .Search-form h2 {
+        text-align: center;
+        color: white;
+    }
+  .Hospital_section .Search-form .search{
+    width: 50%;
+    margin: 2vh 0vw;
+    padding: 10px ;
+    border: none;
+    margin-left: 15vw;
+  }
+  .search-btn{
+    border: 1px solid rgb(141, 141, 81);
+    height: 44px;
+    width: 100px;
+    margin-top: 2vh;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(11, 70, 50);
+  }
+  .Hospital_section .Search-form .search:active{
+    border: 1px solid rgb(14, 58, 14);
+  }
+  .Hospital_container{
+    gap: 30px;
+    margin-top: -5vh;
+    margin-bottom: 10vh;
+    padding: 2vh;
+    border-radius:5px ;
+    color: white;
+    background-color: rgb(6, 119, 104);
+  }
+  .about_hospital{
+    display: flex;
+    margin: 3vh;
+    gap: 100px;
+  }
+  .Hospital_container .find_btn{
+    padding: 10px ;
+    color: white;
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 5px;
+    transform: translateX(10vw);
+    background-color: rgb(23, 71, 55);
+  }
+  /* End search hospital section */
+/* all form section register or login page css */
+.Register_section .login-form{
+  height: auto;
+  width: 50%;
+  border-radius: 5px;
+  position: relative;
+  margin: 5vh 0;
+  padding: 1vh 5vw;
+  transform: translateX(20vw);
+  box-shadow: 2px 2px 2px 2px rgb(26, 63, 26);
+ }
+ .Register_section .login-form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2vh 0;
+ }
+ 
+ .Register_section .login-form input{
+  height: 30px;
+  padding: 20px;
+  margin: 2vh 0;
+ }
+ .Register_section .login-form label{
+  position: relative;
+  top: 2vh;
+  font-weight: bold;
+  color: black;
+
+ }
+ .Register_section .input-checkbox{
+  display: flex;
+  justify-content: space-around;
+ }
+ .login-btn{
+display: inline-block;
+padding: 1vh 1vw;
+width: 30%;
+margin: 5vh 10vw;
+background-color: #21b44d;
+color: #ffffff;
+border-radius: 5px;
+transition: all 0.3s ease;
+border: 1px solid #09c209;
+}
+.login-btn:hover{
+background-color: transparent;
+color: #097733;
+transition: all 0.3s ease;
+border: 1px solid #115811;
+}
+.input-checkbox span input{
+position: relative;
+top: 10px;
+margin: 0 1vw;
+}
+.input-checkbox .Forget-password{
+position: relative;
+top: 30px;
+}
+
+.password-toggle {
+font-size: 1.3em;
+  position: absolute;
+  top: 7vh;
+  right: 10px;
+  cursor: pointer;
+  color: #6c757d;
+  right: 2vw;
+}
+.password-toggle:hover {
+      color: #495057;
+}
+.input_form{
+  height: auto
+}
+.input_form .bg {
+  height: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("images/hero-bg.jpg");
+}
+.form-container {
+   height: auto;
+   width: 80%;
+  margin: 10vh 2vw;
+  padding: 2vh 3vw;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+}
+.form-container input {
+padding: 20px 20px ;
+margin: 1.2vh;
+}
+.thead{
+  font-size: 0.9em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: 1px  solid  rgb(236, 233, 233);
+  background-color: rgb(5, 36, 26);
+}
+.tbody{
+  font-size: 0.9em;
+  border: 1px  solid  rgb(109, 105, 105);
+  text-align: center;
+}
+.Vaccine_status{
+  background-color: white;
+}
+/* End parents .Register-form _page */
+ /* add child vaccine record setion */
+ #Add_record{
+  display: none;
+}
+.Add_new_btn{
+display: inline-block;
+padding: 1vh 1vw;
+width: 50%;
+margin: 2vh 20vw;
+background-color: #21b44d;
+color: #ffffff;
+border-radius: 5px;
+transition: all 0.3s ease;
+border: 1px solid #09c209;
+}
+.Add_new_btn:hover{
+background-color: transparent;
+color: white;
+transition: all 0.3s ease;
+border: 1px solid white;
+}
+
+/*  end add child vaccine record setion */
+.client_section .heading_container {
+          align-items: center;
+}
+
+.client_section .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 45px;
+  border-radius: 15px;
+}
+
+.client_section .box .img-box {
+  margin-bottom: 15px;
+  min-width: 145px;
+  max-width: 145px;
+  overflow: hidden;
+}
+
+.client_section .box .img-box img {
+  width: 100%;
+  border-radius: 100%;
+  border: 7px solid rgba(255, 255, 255, 0.45);
+}
+
+.client_section .box .detail-box {
+  display: flex;
+ flex-direction: column;
+}
+
+.client_section .box .detail-box .name img {
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+.client_section .box .detail-box .name h6 {
+  color: #62d2a2;
+  font-size: 20px;
+}
+
+.client_section .carousel_btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.client_section .carousel-control-prev,
+.client_section .carousel-control-next {
+  position: unset;
+  width: 45px;
+  height: 45px;
+  border: none;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
+  background-color: #62d2a2;
+  background-position: center;
+  border-radius: 5px;
+  margin: 0 2.5px;
+}
+
+.client_section .carousel-control-prev:hover,
+.client_section .carousel-control-next:hover {
+  background-color: #1fab89;
+}
+
+.client_section .carousel-control-next {
+  left: initial;
+}
+/* pricing section */
+.pricing-section {
+  padding: 60px 0;
+}
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card-header {
+  background-color: #1fab89;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+}
+.card-body {
+  padding: 30px;
+}
+.btn-custom {
+  padding: 10px 45px;
+  background-color: #1fab89;
+  color: #ffffff;
+}
+.btn-custom:hover{
+  background-color: transparent;
+  border: 0.5px solid #1fab89 ;
+  color: #1fab89;
+}
+
+/* End pricing section */
+ /* vaccine status for hopsitals */
+ .vaccine-status{
+  display: flex;
+ }
+ .vaccine-status h6 {
+  color:  rgb(6, 12, 8);
+ }
+ .vaccine-status h6 span {
+  color:  rgb(20, 58, 32);
+ }
+ /* end vaccine status */
+ 
+  /* start  admin Hospital_secion */
+  .Hospital_Bookings h5 {
+    text-align: center;
+    margin: 2vh 0;
+  }
+  .table{
+    background-color: white;
+   
+  }
+  .dropdown-item:hover{
+    color: black;
+   
+  }
+ .messages{
+  height: 40vh;
+  width: 30%;
+  margin-left: 64vw;
+  border: 1px solid black;
+  display: none;
+  position: absolute;
+  z-index: 99;
+  background-color: bisque;
+  justify-content: flex-end;
+  align-items: flex-end;
+ }
+ .messages div span {
+  background-color: black;
+  color: white;
+ }
+
+#chatSection {
+  padding: 1vh 3vh;
+    position: fixed;
+    top: 15vh;
+    right: -33%;
+    height: 100%;
+    width: 33%;
+    z-index: 99;
+    background: #178066;
+    border-top: 1px solid white;
+    transition: right 1s ease;
+    box-shadow: 2px 0 5px rgba(255, 025, 0, 0.5);
+ }
+#chatSection.open {
+  right: 0;
+  }
+#AllLinks {
+  position: fixed;
+  top: 15vh;
+  left: -33%;
+  height: 100%;
+  width: 33%;
+  z-index: 99;
+  background: #178066;
+  border-top: 1px solid white;
+  transition: left 1s ease;
+  box-shadow: 2px 0 5px rgba(255, 025, 0, 0.5);
+}
+       
+ #AllLinks.move {
+     left: 0;
+ }
+ .All_pages ul li{
+   text-decoration: none;
+   list-style: none;
+   font-size: 1.2em;
+   padding: 1vh 0;
+}
+.All_pages ul li a {
+   text-decoration: none;
+   color: white;
+}
+.All_pages ul li a:hover {
+   color: wheat;
+}
+  /* End Admin_Hospital section */
+  /* admin all hospital list details */
+  .AllHospitals_section{
+    background-color: rgb(3, 107, 98);
+  }
+  .AllHospitals  {
+    margin: 4vh 0;
+   padding: 3vh 0;
+   border: 1px solid black;
+  }
+  .AllHospitals thead {
+    background-color: aquamarine;
+    margin: 3vh 0;
+    padding: 2vh 0;
+  }
+  .AllHospitals thead tr th {
+    border:  1px solid black;
+    text-align: center;
+  }
+  .AllHospitals tbody tr td {
+    border:  1px solid black;
+    text-align: center;
+  }
+   /* end admin all hospital list details */
+    /* css vaccine child report section */
+    .report-card {
+      position: relative;
+      background-color: rgb(16, 70, 52);
+      color: white;
+      border-radius: 5px;
+      margin: 1vh 1vw;
+      padding: 3vh 5vw;
+    }
+    .report-card h2 {
+      text-align: center;
+      margin: 1vh 0;
+    }
+    .main_card {
+      margin: 2vh 1vw;
+      text-align: center;
+      justify-content:center;
+    }
+     .report_body {
+      position: relative;
+      margin-left: 2vw;
+     
+     }
+     .report_body table tr th {
+      border:  1px solid wheat;
+      text-align: center;
+      padding: 1vh 2vw;
+      font-size: 1em;
+      width: 20%;
+     }
+     .report_body table tr td {
+      border:  1px solid wheat;
+      text-align: center;
+      padding: 1vh 3vw;
+      font-size: 1em;
+      width: 50%;
+     }
+     
+     /* end css vaccine child report section */
+
+.footer_section {
+  background: #178066;
+  color: #ffffff;
+  padding: 60px 0 15px 0;
+  position: relative;
+}
+
+.footer_section h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer_section .footer_col {
+  margin-bottom: 30px;
+}
+
+.footer_section .footer_contact .contact_link_box {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_section .footer_contact .contact_link_box a {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.footer_section .footer_contact .contact_link_box a i {
+  margin-right: 5px;
+}
+
+.footer_section .footer_contact .contact_link_box a:hover {
+  color: #62d2a2;
+}
+
+.footer_section .footer_social {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer_section .footer_social a {
+ 
+  display: flex;
+          justify-content: center;
+          align-items: center;
+  color: #ffffff;
+  border-radius: 100%;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.footer_section .footer_social a:hover {
+  color: #62d2a2;
+}
+
+.footer_section .footer_links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_section .footer_links a {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer_section .footer_links a:hover {
+  color: #62d2a2;
+}
+
+.footer_section form input {
+  border: none;
+  background-color: #fefefe;
+  width: 100%;
+  height: 45px;
+  color: #000000;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.footer_section form input::-webkit-input-placeholder {
+  color: #777;
+}
+
+.footer_section form input:-ms-input-placeholder {
+  color: #777;
+}
+
+.footer_section form input::-ms-input-placeholder {
+  color: #777;
+}
+
+.footer_section form input::placeholder {
+  color: #777;
+}
+
+.footer_section form button {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #62d2a2;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #62d2a2;
+  margin-top: 15px;
+}
+
+.footer_section form button:hover {
+  background-color: transparent;
+  color: #62d2a2;
+}
+
+.footer_section .footer-info {
+  text-align: center;
+}
+
+.footer_section .footer-info p {
+  color: #ffffff;
+  padding: 25px 0;
+  margin: 0;
+}
+
+.footer_section .footer-info p a {
+  color: inherit;
+}
+/*# sourceMappingURL=style.css.map */
